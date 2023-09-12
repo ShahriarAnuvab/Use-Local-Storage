@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Taliwindcss</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="container mx-auto ">
+        <div class="flex justify-center items-center my-10 gap-5 flex-col md:flex-row">
+        <input type="text" placeholder="Product" id="product" class="input input-bordered">
+        <input type="text" placeholder="Quantity" id="quantity" class="input input-bordered">
+        <button id="btn" onclick="addProduct()" class="btn">Add</button>
+        </div>
+        <div class="text-center ">
+            <h3 class="text-5xl font-semibold uppercase">Added To cart: </h3>
+            <div id="cartContainer" class="my-5">
+                <!-- <p class="text-lg my-2 border rounded-lg border-black w-2/5 md:w-1/5 mx-auto p-2"> 1. <span class="font-bold">Product:</span> Mobile  <span class="font-bold"> <br>Quantity:</span> 12</p> -->
+
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>
